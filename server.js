@@ -53,7 +53,7 @@ app.post('/question', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hello Worls');
+  res.send('Hello World');
 });
 
 app.post('/uploadPassage', async (req, res) => {

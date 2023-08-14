@@ -1,4 +1,3 @@
 npm install
 npm start
-npm server.js
-(se necessario cambiare la porta)
+(se necessario cambiare la porta, al momento è configurata la 3002)
