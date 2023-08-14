@@ -7,7 +7,7 @@
     "test": "test",
     "live": "nodemon server.js"
   },
-  "author": "Sabino Picariello",
+  "author": "Stefano D'Urso",
   "license": "ISC",
   "peerDependencies": {
     "@tensorflow/tfjs-converter": "^3.0.0",

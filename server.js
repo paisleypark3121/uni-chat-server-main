@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const port = 3001
+const port = 3002
 let loading = false;
 
 let model = undefined;
@@ -52,6 +52,10 @@ app.post('/question', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello Worls');
+});
+
 app.post('/uploadPassage', async (req, res) => {
   if(loading){
     res.send(createResponse(STANDARD_LOADING));
@@ -74,7 +78,7 @@ app.post('/uploadPassage', async (req, res) => {
 app.listen(port, async () => {
   loading = true;
   model = await qna.load();
-  console.log(`uni-chat-server is listening on port ${port}\nBy Sabino Picariello`);
+  console.log(`uni-chat-server is listening on port ${port}\n`);
   loading = false;
 })
 
